@@ -4,8 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Ahmed Osama Director, Videographer & Video Editor">
+    <meta property="og:description" content="Ahmed Osama Director, Videographer & Video Editor">
+    <meta property="twitter:description" content="Ahmed Osama Director, Videographer & Video Editor">
+
+    <meta name="keywords" content="Ahmed Osama Director, Videographer & Video Editor">
+    <meta name="author" content="Ahmed Osama Director, Videographer & Video Editor">
+
+    <meta property="og:image" content="assets/imgs/ScreenShot.png">
+    <meta property="twitter:image" content="assets/imgs/ScreenShot.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta property="og:site_name" content="Ahmed Osama ,Videographer & Video Editor">
+    <meta property="twitter:title" content="Ahmed Osama ,Videographer & Video Editor">
+    <meta property="og:title" content="Ahmed Osama ,Videographer & Video Editor">
+
+    <link rel="shortcut icon" href="assets/imgs/ahmed.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Ahmed Osama</title>
+    <title>Ahmed Osama ,Videographer & Video Editor</title>
 </head>
 
 <body>
@@ -21,6 +38,12 @@
         </div>
     </header>
     <div class="light"></div>
+    <!-- <div class="loder">
+        <div>السلام عليكم</div>
+        <div><img src="assets/svg/loder1.svg"></div>
+        <div><img src="assets/svg/loder2.svg"></div>
+        <div><img src="assets/svg/loder3.svg"></div>
+    </div> -->
     <div class="top">
         <!-- ---------------------------------------- media ------------------------------------------------ -->
         <div class="rightt">
@@ -32,44 +55,14 @@
                             onclick="showMedia('Portfolio')">Portfolio</button>
                         <button class="menu-button" data-section="Contact"
                             onclick="showMedia('Contact')">Contact</button>
-                        <button class="menu-button" data-section="AboutMe" onclick="showMedia('AboutMe')">About
+                        <button class="menu-button" style="color:#C837AB;" data-section="AboutMe"
+                            onclick="showMedia('AboutMe')">About
                             Me</button>
                     </div>
                 </div>
                 <div class="content">
                     <div class="page" style="display: none;" id="Portfolio">
-                        <div class="card">
-                            <img src="assets/imgs/1.png">
-                            <h3>براكتس اكادمي</h3>
-                        </div>
-                        <div class="card">
-                            <img src="assets/imgs/2.png">
-                            <h3>بروكور</h3>
-                        </div>
-                        <div class="card">
-                            <img src="assets/imgs/1.png">
-                            <h3>براكتس اكادمي</h3>
-                        </div>
-                        <div class="card">
-                            <img src="assets/imgs/2.png">
-                            <h3>بروكور</h3>
-                        </div>
-                        <div class="card">
-                            <img src="assets/imgs/1.png">
-                            <h3>براكتس اكادمي</h3>
-                        </div>
-                        <div class="card">
-                            <img src="assets/imgs/2.png">
-                            <h3>بروكور</h3>
-                        </div>
-                        <div class="card">
-                            <img src="assets/imgs/1.png">
-                            <h3>براكتس اكادمي</h3>
-                        </div>
-                        <div class="card">
-                            <img src="assets/imgs/2.png">
-                            <h3>بروكور</h3>
-                        </div>
+
                     </div>
                     <div class="page" style="display: none;" id="Contact">
                         <input type="text" placeholder="name">
@@ -96,7 +89,8 @@
                 <div class="line top"></div>
                 <div class="limgr">
                     <div class="line left"></div>
-                    <img src="assets/imgs/ahmed.png" alt="ahmed osama videographer video editor">
+                    <img id="osamaimg" src="assets/imgs/ahmed.png" alt="ahmed osama محمد اسامة مونتير مخرج مصور فديو Director videographer video editor">
+                    <iframe style="display: none;" id="videoPlayer"></iframe>
                     <div class="line right"></div>
                 </div>
                 <div class="line bot"></div>
@@ -107,6 +101,8 @@
     <div class="timeline">
         <div class="line top"></div>
         <div class="right">
+            <img class="slider" src="assets/svg/muse.svg">
+            <div class="time"></div>
             <div class="videolines">
                 <img class="video" src="assets/svg/video.svg">
                 <img class="video" src="assets/svg/video.svg">
