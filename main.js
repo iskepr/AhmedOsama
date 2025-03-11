@@ -17,7 +17,7 @@ function showMedia(secID) {
     (btn) => (btn.style.color = "var(--txt-color)")
   );
 
-  if (secID != "Portfolio") {
+  if (secID == "AboutMe") {
     sections[secID].style.display = "block";
   } else {
     sections[secID].style.display = "flex";
@@ -32,27 +32,27 @@ for (let i = 0; i < 40; i++) { // يجب أن يكون i < 100 وليس i > 100
 
 
 // loder
-// window.onload = function () {
-//   const loder = document.querySelector(".loder");
-//   const divs = loder.querySelectorAll("div");
-//   let index = 0;
+window.onload = function () {
+  const loder = document.querySelector(".loder");
+  const divs = loder.querySelectorAll("div");
+  let index = 0;
 
-//   setInterval(() => {
-//     loder.style.opacity = 0;
-//     setInterval(() => {
-//       loder.style.display = "none";
-//     }, 400);
-//   }, 1600);
+  setInterval(() => {
+    loder.style.opacity = 0;
+    setInterval(() => {
+      loder.style.display = "none";
+    }, 400);
+  }, 1600);
 
-//   function showNextDiv() {
-//     divs.forEach((div) => (div.style.opacity = 0));
-//     divs[index].style.opacity = 1;
-//     index = (index + 1) % divs.length;
-//     setTimeout(showNextDiv, 500);
-//   }
-//   // تشغيل الدالة لأول مرة
-//   showNextDiv();
-// };
+  function showNextDiv() {
+    divs.forEach((div) => (div.style.opacity = 0));
+    divs[index].style.opacity = 1;
+    index = (index + 1) % divs.length;
+    setTimeout(showNextDiv, 500);
+  }
+  // تشغيل الدالة لأول مرة
+  showNextDiv();
+};
 
 // ------------------------------------------ Portfolio
 // https://drive.google.com/drive/folders/1oxyaRWdR8y8T7L9_sNsqUzT7H5gVqC2e?fbclid=IwY2xjawI73mhleHRuA2FlbQIxMAABHelXanY16140CaRPLUPLMrAzRQb78mD6HQigkSYcV7LJqZfMVsVTqIeX3A_aem_BfTnoK-fmunUM5l-DUUYcQ
@@ -79,7 +79,6 @@ videoIds.forEach((video) => {
   `;
 
   videoItem.addEventListener("click", () => {
-    document.querySelector(".video .puse").style.display = "none";
     osamaimg.style.display = "none";
     player.src = `https://drive.google.com/file/d/${id}/preview`;
     player.style.display = "block";
